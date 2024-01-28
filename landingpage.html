@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Fit+ Gym</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    /* CSS RESET */
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(landingpage/womangym2.jpg);
+        background-repeat: no-repeat;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 12px;
+        margin: auto;
+    }
+
+
+    .right {
+        /* border: 2px solid green; */
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 29px;
+    }
+
+    .mid {
+        /* border: 2px solid blue; */
+        display: block;
+        width: 55%;
+        margin: 18px 145px;
+    }
+
+    .left img {
+        width: 100px;
+    }
+
+    .navbar {
+        display: inline-block;
+        
+    }
+
+    .navbar li {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: rgb(248, 237, 255);
+        padding: 34px 23px;
+        font-size: 19px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: none;
+        color: rgb(191, 207, 231);
+
+    }
+
+    .btn {
+        font-family: 'Inter', sans-serif;
+    }
+
+    .btn#Membership {
+        margin: 0px 9px;
+        background-color: rgb(82, 92, 235);
+        color: rgb(248, 237, 255);
+        padding: 8px 18px;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .btn#Call {
+        margin: 0px 9px;
+        background-color: rgb(61, 59, 64);
+        color: rgb(248, 237, 255);
+        padding: 8px 18px;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .btn#Membership:hover {
+        background-color: rgb(248, 237, 255);
+        color: rgb(82, 92, 235);
+    }
+
+    .btn#Call:hover {
+        color: rgb(178, 174, 180);
+    }
+
+    .container {
+        border: 2px solid rgb(248, 237, 255);
+        margin: 300px 800px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 25px;
+    }
+
+    .btn#signup {
+        margin: 0px 9px;
+        background-color: rgb(82, 92, 235);
+        color: rgb(248, 237, 255);
+        padding: 8px 18px;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .btn#signup:hover {
+        background-color: rgb(248, 237, 255);
+        color: rgb(82, 92, 235);
+    }
+
+    .formgroup input {
+        text-align: center;
+        display: block;
+        width: 450px;
+        padding: 9px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 24 px;
+        border-radius: 10px;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button#signup {
+        display: block;
+        width: 23%;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+
+    .about {
+        /* border: 2px solid yellow; */
+        margin: 125px;
+        padding: 15px;
+        color: rgb(248, 237, 255);
+        width: 600px;
+        height: 520px;
+        font-size: 28px;
+        text-align: center;
+        background-color: rgb(22, 23, 36);
+       
+    }
+
+    .cont1 {
+        /* border: 2px solid green; */
+        margin: 70px;
+        font-size: 20px;
+    }
+
+    .imagecont{
+        margin: 125px;
+        
+        color: rgb(248, 237, 255);
+        width: 600px;
+        height: 547px;
+        font-size: 28px;
+        text-align: center;
+        background-color: rgb(22, 23, 36);
+        position: absolute;
+        top: 1041px;
+        left: 750px;
+    }
+
+    .imagecont img{
+        width: 600px;
+        height: 548px;
+    }
+
+     #scrollToTopBtn {
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;  
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0056b3; 
+} 
+   
+</style>
+
+<body>
+
+    <nav>
+        <div class="left">
+            <img src="landingpage/gymlogo1.png" alt="">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href='#' class="active">Home</a></li>
+                <li><a href='#aboutus'>About Us</a></li>
+                <li><a href='#'>Challenges</a></li>
+                <li><a href='#'>Pricing and Plans</a></li>
+                <li><a href='#'>Contact Us</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <button class="btn" id="Membership">Membership</button>
+            <button class="btn" id="Call">Call us now</button>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 id="befit">BE FIT. JOIN US NOW </h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+        </form>
+        <button class="btn" id="signup">
+            Sign up
+        </button>
+    </div>
+   
+    <div class="about">
+        <h1 id="aboutus">ABOUT FIT+ <br>Health Studio</h1>
+        <div class="cont1">At FIT+, we are more than just a fitness center- we are a community dedicated to
+            transforming lives through a holistic approach to health and well-being. Established with a passion for
+            fitness and a commitment to fostering a supportive environment, we strive to be the go-to destination for
+            individuals on their journey to a healthier and happier lifestyle.</div>
+    </div>
+    <div class="imagecont">
+        <img src="landingpage/equipment.jpg" alt="">
+    </div>
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"><img src="landingpage/up-arrow.png" alt=""></button>
+
+    <script src="script.js"></script>
+
+    <!-- smooth scroll (JAVASCRIPT)  -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+</body>
+
+</html>
